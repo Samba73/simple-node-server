@@ -15,7 +15,7 @@ var server = http.createServer(function (req, res) {
     }
     else if (req.url == "/dashboard") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Dashboard Page.</p></body></html>');
+        res.write('<html><body><p>This is Dashboard Page from Samba github.</p></body></html>');
         res.end();
     }
     else
