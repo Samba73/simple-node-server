@@ -9,7 +9,7 @@ var server = http.createServer(function (req, res) {
     }
     else if (req.url == "/home") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Home Page from Samba github.Changes made.</p></body></html>');
+        res.write('<html><body><p>This is Home Page from Samba github and viewing through AWS pipeline.</p></body></html>');
         res.end();
 
     }
