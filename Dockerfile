@@ -8,6 +8,8 @@ RUN apt-get -y update
 
 RUN apt-get install -y apache2
 
+RUN apt-get install -y curl
+
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x
 
 RUN apt-get install -y nodejs
