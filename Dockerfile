@@ -1,5 +1,7 @@
 FROM ubuntu:focal
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 WORKDIR /usr/share/app
 
 RUN apt-get -y update
