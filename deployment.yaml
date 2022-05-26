@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: node-k8s-5000
 spec:
+  type: NodePort
   selector:
     app: node-k8s-5000
   ports:
