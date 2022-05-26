@@ -9,13 +9,13 @@ var server = http.createServer(function (req, res) {
     }
     else if (req.url == "/home") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Home Page from Sambasivam github and viewing through AJenkins.</p></body></html>');
+        res.write('<html><body><p>This is Home Page from Sambasivam github and viewing through Jenkins.</p></body></html>');
         res.end();
 
     }
     else if (req.url == "/dashboard") {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write('<html><body><p>This is Dashboard Page from Sambasivam github.</p></body></html>');
+        res.write('<html><body><p>This is Dashboard Page from Sambasivam github.This is Jenkins practice</p></body></html>');
         res.end();
     }
     else
