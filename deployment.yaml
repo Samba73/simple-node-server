@@ -28,6 +28,6 @@ spec:
     spec:
       containers:
       - name: node-server
-        image: node-server-5000:24
+        image: samba73/node-server-5000:24
         ports:
         - containerPort: 5000
