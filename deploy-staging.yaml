@@ -9,7 +9,7 @@
        - name: install docker-py python module
          pip:
             name: docker-py
-            state: present
+            state: latest
        - name: deploy the container
          docker_container:
                name: node-server
