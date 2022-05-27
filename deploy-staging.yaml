@@ -13,6 +13,6 @@
        - name: deploy the container
          docker_container:
                name: node-server
-               image: samba73/node-server-5000:24
+               image: samba73/node-server-new:1
                state: started
                           
