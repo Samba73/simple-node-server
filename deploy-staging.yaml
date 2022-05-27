@@ -1,11 +1,8 @@
 ---
 - hosts: staging
   become: true
-  vars:
-    docker_ecs_login_password: "{{ lookup('env','ECS_LOGIN_PASSWORD') }}"
-  gather_facts: no
   environment:
-    PYTHONPATH: "{{ lookup('env','PYTHONPATH') }}:/usr/local/lib/python2.7/dist-packages:/usr/local/lib/python2.7/site-packages"
+    PYTHONPATH: "/usr/local/lib/python3.8/dist-packages"
   tasks:
        - name: install pip
          apt:
