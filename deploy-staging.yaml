@@ -2,6 +2,14 @@
 - hosts: staging
   become: true
   tasks:
+       - name: install python pip
+         apt:
+            name: python-pip
+            state: present
+       - name: install docker-py python module
+         pip:
+            name: docker-py
+            state: present
        - name: deploy the container
          docker_container:
                name: node-server
