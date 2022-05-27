@@ -4,10 +4,10 @@
   tasks:
        - name: install pip
          apt:
-            name: python-pip
+            name: python3-pip
             state: present
        - name: install docker-py python module
-         pip:
+         pip3:
             name: docker-py
             state: present
        - name: deploy the container
