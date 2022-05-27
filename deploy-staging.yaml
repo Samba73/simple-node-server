@@ -1,0 +1,9 @@
+---
+- hosts: staging
+  become: true
+  tasks:
+       docker_container:
+               - name: pull image and deploy
+                 image: samba73/node-server-5000:24
+                 state: started
+                          
