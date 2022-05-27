@@ -1,2 +1,2 @@
 [staging]
-172.31.31.109
+172.31.31.109 ansible_user=root
