@@ -2,9 +2,17 @@
 - hosts: staging
   become: true
   tasks:
+       - name: install pip
+         apt:
+            name: python3-pip
+            state: present
+       - name: install docker-py python module
+         pip:
+            name: docker-py
+            state: latest
        - name: deploy the container
          docker_container:
                name: node-server
-               image: samba73/node-server-new:1
+               image: "samba73/node-server-new:{{buildNumber}}"
                state: started
                           
