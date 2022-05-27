@@ -3,7 +3,7 @@
   become: true
   tasks:
        - name: pull image and deploy in staging
-       docker_container:
+         docker_container:
                - name: node-server
                  image: samba73/node-server-5000:24
                  state: started
